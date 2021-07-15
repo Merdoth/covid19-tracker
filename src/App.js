@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from "./components/Header/Header";
+import InfoBox from "./components/InfoBox/InfoBox";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+
+      <div className="app__stats">
+        <InfoBox 
+          title="Coronavirus Cases" 
+          cases={123}
+          total={2000}
+        />
+        <InfoBox 
+          title="Recovered"
+          cases={124}
+          total={3000} 
+        />
+        <InfoBox 
+          title="Deaths"
+          cases={125} 
+          total={4000}
+        />
+      </div>
+
     </div>
   );
 }
