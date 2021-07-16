@@ -17,7 +17,6 @@ code {
     monospace;
 }
 
-.app__stats {
-  display: flex;
-  justify-content: space-between;
+.graph {
+  flex-grow: 1;
 }
